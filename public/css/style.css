@@ -1,0 +1,124 @@
+*, *::after, *::before { box-sizing:border-box;}
+ html,
+ body {
+	margin: 0 auto;
+ 	padding: 0;
+	min-height: 100vh;
+ }
+p {
+	margin: 0.5em auto;
+}
+ body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+ 	color: #0C1622;
+ 	background-color:#fefefe;
+ 	font: 14px monospace;
+ 	line-height: 1.5;
+ }
+
+ main {
+	display:flex;
+	flex-direction: inherit;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+ }
+ main ul li {
+	list-style-type: none;
+	list-style: none;
+}
+ h1 {
+	 text-align: center;
+	 letter-spacing:5px;
+	font-size: 1.5em;
+ }
+article {
+ 	margin: 1em;
+ }
+
+
+ header,
+ footer {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-grow: 0;
+ 	flex-shrink: 0;
+	text-transform: uppercase;
+	color: #fefefe;
+	background-color: rgb(210, 22, 59);
+}
+
+ footer {
+ padding:0.5em;
+ }
+
+ nav {
+ flex-grow: 1;
+ }
+
+ .nav-list {margin: 0;padding: 0;list-style: none;display: flex;gap: 1em;}
+ .nav-list li:nth-of-type(2) {margin-left: auto;}
+ .nav-list li:nth-of-type(4) {margin-right: 1em;}
+
+ a {color: #fefefe; text-decoration: none;} a:visited {color:#fefefe;} a:active {color: #fefefe; text-decoration: underline;} a:hover {color: #fefefe; cursor: pointer;    outline: 0;
+	; text-decoration: underline;
+ }
+
+ #emblem {
+ height: 50px;
+ padding: 0.5em;
+ filter: invert(1);
+}
+
+ .search {
+	width: 100%;
+	position: relative;
+	display: flex;
+	height: 36px;
+  }
+  
+  .searchTerm {
+	width: 100%;
+	border: 3px solid #d41c1c;
+	border-right: none;
+	padding: 5px;
+	height: 36px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+	color: #cb1d1d;
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #d62323;
+	background: #d22121;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+ .film-carousel {
+	width: 900px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ }

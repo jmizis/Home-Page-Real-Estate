@@ -72,12 +72,40 @@ article {
  padding: 0.5em;
  filter: invert(1);
 }
-
+.homesearch {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
  .search {
 	width: 100%;
 	position: relative;
 	display: flex;
 	height: 36px;
+  }
+
+  .jumbotron { 
+	padding: 30px; /* fills out the jumbotron */
+	background-color: #111;
+  }
+  
+  .container {
+	width: 65em; /* specify a width */
+	margin: 0 auto;  /* centers the container */
+	padding: 0 15px; /* adds some padding to the left and right*/
+  }
+  
+  .jumbotron .container { 
+	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+	background-color: #222;
+  }
+  
+  .jumbotron h1 { 
+	text-align: center; /* centers the heading */
+	color: #DDD;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
   }
   
   .searchTerm {
@@ -107,7 +135,6 @@ article {
 	font-size: 20px;
   }
   
-  /*Resize the wrap to see the search bar change!*/
   .wrap{
 	width: 30%;
 	position: absolute;
@@ -116,9 +143,9 @@ article {
 	transform: translate(-50%, -50%);
   }
  .film-carousel {
-	width: 900px;
+	width: 50%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
- }
+ } 

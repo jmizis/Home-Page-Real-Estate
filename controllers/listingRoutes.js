@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Login } = require('../models');
+const { Login } = require('../models/Login');
 const withAuth = require('../utils/auth');
 
 // Prevent non logged in users from viewing the listing page

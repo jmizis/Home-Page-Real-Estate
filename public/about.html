@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="./assets/icons:fonts/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<title>roman's webpage</title>
+</head>
+
+<body>
+	<header>
+		<img id="emblem" src="./imgs/icons8-home-100.png" alt="home icon"></a>
+		<nav>
+			<ul class="nav-list">
+				<li><a href="index.html">Home Page</a></li>
+				<li><a href="about.html">About</a></li>|
+				<li><a href="buy.html">Buyers</a></li>|
+				<li><a href="signup.html">Login / Register</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="home">
+<figure>
+	<img style="width:400px;" id="home"  class="film-carousel" src="./imgs/1.jpeg"
+	alt="Home 1">
+<img style="width:400px;" id="home"  class="film-carousel" src="./imgs/2.jpeg"
+	alt="Home 2">
+<img style="width:400px;" id="home"  class="film-carousel" src="./imgs/3.jpeg"
+	alt="Home 3">
+<img style="width:400px;" id="home"  class="film-carousel" src="./imgs/4.jpeg"
+	alt="Home 4">
+	<figcaption stle="text-align: center;"> 2022 Home Page Realtor</figcaption>
+</figure>
+<article>
+<h1>About</h1>
+	<p>Webpage created by 2022 WEB Design students for their second project. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+	<p>Started in 2022, Home Page is a leader in providing realtors with an easy-to-access application which allows sellers to upload homes to a databass. Buyers can view and contact the realtor directly for information about homes. </p>
+</article>
+	</main>
+	<footer>
+		<small>
+			Copyright:&nbsp;&nbsp;© 2022 Roman Sokol, John Mizis, Aaron King, Hector Perez
+			<br>
+			License:&nbsp;&nbsp;&nbsp;
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
+			<br>
+			Social:&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/sokolroman">github</a>
+		</small>
+	</footer>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("film-carousel");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) { myIndex = 1 }
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 1500);
+		}
+
+	</script>
+</body>
+
+</html>

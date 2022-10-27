@@ -135,3 +135,18 @@ article {
 	border-radius: 5px 5px 5px 5px;
 padding:1em;
   }
+
+  .listing-container {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 3;
+  }
+
+  .listing-card {
+	width: 900px;
+	height: 800px;
+	background-color: #cc0000;
+	margin:2.5px;
+	border-radius: 5px 5px 5px 5px;
+padding:1em;
+  }

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Listings extends Model {}
+class Listing extends Model {}
 
-Listings.init(
+Listing.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -25,6 +25,13 @@ Listings.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-
+      
+    }, {
+      sequelize,
+      timestamps: false,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'listing',
     })
     
+    module.exports = Listing

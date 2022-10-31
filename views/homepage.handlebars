@@ -1,11 +1,79 @@
-{{!-- Thi is a template or a place holder --}}
-{{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
+{{! Thi is a template or a place holder }}
+{{#each users as |user|}}
+  <div class="row align-center mb-5">
+    <div class="col-md-6">
+      <h2>{{{get_emoji}}} {{user.name}}</h2>
+    </div>
+    <div class="col-md-6">
+      <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
-</div>
 {{/each}}
+
+<main class="home">
+
+  <figure>
+    <img
+      style="width:400px;"
+      id="home"
+      class="film-carousel"
+      src="./imgs/1.jpeg"
+      alt="Home 1"
+    />
+    <img
+      style="width:400px;"
+      id="home"
+      class="film-carousel"
+      src="./imgs/2.jpeg"
+      alt="Home 2"
+    />
+    <img
+      style="width:400px;"
+      id="home"
+      class="film-carousel"
+      src="./imgs/3.jpeg"
+      alt="Home 3"
+    />
+    <img
+      style="width:400px;"
+      id="home"
+      class="film-carousel"
+      src="./imgs/4.jpeg"
+      alt="Home 4"
+    />
+    <figcaption stle="text-align: center;"> 2022 Home Page Realtor</figcaption>
+  </figure>
+
+  <h1>Find Your Local Area Home</h1>
+
+{{!-- search functionality  --}}
+  {{! <div class="wrap">
+					<div class="search">
+					   <input type="text" class="searchTerm" placeholder="Location, Zip or Address">
+					   <button type="submit" class="searchButton">
+						 <i class="fa fa-search">search</i>
+					  </button>
+					</div>
+				 </div> }}
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Featured</h2>
+
+  {{!-- place four listings on home page  --}}
+  {{{listings}}} 
+
+    </div>
+  </div>
+
+  <article>
+    <h3>
+      About
+    </h3>
+    <p>Webpage created by 2022 WEB Design course. Sunt in culpa qui officia
+      deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco.</p>
+  </article>
+
+</main>

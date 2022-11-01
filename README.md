@@ -20,7 +20,7 @@ Event though we had issues we did a excellent job on working with github and our
 
 
 ### Heroku
-For this project we had to deploy our application to heroku.  URL:
+For this project we had to deploy our application to heroku. 
 
 
 

@@ -21,6 +21,7 @@ Event though we had issues we did a excellent job on working with github and our
 
 ### Heroku
 For this project we had to deploy our application to heroku. 
+URL:
 
 
 
@@ -34,4 +35,5 @@ This project was a great way for us to show off our newly learned skills, along 
 
 ### Links
 repo: https://github.com/jmizis/Project-2
-Heroku: 
+
+Heroku URL: 

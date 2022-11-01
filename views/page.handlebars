@@ -1,17 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
 
-      <img style="width:500px; margin:auto;" src="./imgs/1.jpeg" alt="Home 1" />
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-        <h3>{{{Listing Price}}}</h3>
-        <ul>
-            <li>{{{beds}}}</li>|
-                        <li>{{{bath}}}</li>|
-            <li>{{{lot}}}</li>|
-        </ul>
-        <p>{{{address}}}</p>
-        <p class="card-text">{{{Some quick example text to build on the listing title
-          and make up the bulk of the card's content.}}}</p>
-      </div>
-
-    </div>
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
   
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/1.jpeg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/2.jpeg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/3.jpeg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  <article class="listing-page">
+             <div class="card-content">
+                   <h3>625,000$</h3>
+                    <h4>4399 McNamara Place lewis Center OH 43035</h4>
+                    <p>4 Beds | 5 Baths | 4,150 sqft</p>
+                  <p>Execute are we in agreeance what do you feel you would bring to the table if you were hired for this position, nor closer to the metal goalposts, are there any leftovers in the kitchen?.</p>
+              </div><!-- .card-content -->
+          </a>
+      </article>  
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
+</html>
+
+     

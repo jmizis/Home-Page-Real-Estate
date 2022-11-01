@@ -1,3 +1,5 @@
+// const router = require('../../controllers/listingRoutes.js');
+
 const loginFormHandler = async (event) => {
   // Stop the browser from submitting the form so we can do so with JavaScript
   event.preventDefault();
@@ -15,7 +17,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/listing');
     } else {
       alert('Failed to log in');
     }

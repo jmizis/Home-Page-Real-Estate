@@ -1,15 +1,14 @@
 const router = require('express').Router();
 
-const loginRoutes = require('./login');
-const homeRoutes = require('./');
-const buyerRoutes = require('./buyer');
-const sellerRoutes = require('./seller')
+const homeRoutes = require('./homeRoutes');
 
+const apiRoutes = require('./api/');
 
-
+//it makes our homes available -views (tend to be get routes)
 router.use('/', homeRoutes);
-router.use('/login', loginRoutes);
-router.use('/buyer', buyerRoutes);
-router.use('/seller', sellerRoutes);
+
+//api folder enables our api /data routes like posts, puts and deletes
+//adds "/api" to endpoint which enables api routes
+router.use('/api', apiRoutes);
 
 module.exports = router;

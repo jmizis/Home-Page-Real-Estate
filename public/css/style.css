@@ -1,152 +1,279 @@
 *, *::after, *::before { box-sizing:border-box;}
- html,
- body {
-	margin: 0 auto;
- 	padding: 0;
-	min-height: 100vh;
- }
-p {
-	margin: 0.5em auto;
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+    margin:0px; 
+    padding:0px; 
 }
- body {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
- 	color: #0C1622;
- 	background-color:#fefefe;
- 	font: 14px monospace;
- 	line-height: 1.5;
+a {color: #292f36; text-decoration: none;} a:visited {color:#292f36;} a:active {color: #292f36; text-decoration: underline;} a:hover {color: #8f8f8f; cursor: pointer;    outline: 0;
+	; text-decoration: none;
  }
 
- main {
-	display:flex;
-	flex-direction: inherit;
-	flex-grow: 1;
-	justify-content: center;
-	align-items: center;
- }
- main ul li {
-	list-style-type: none;
-	list-style: none;
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
 }
- h1 {
-	 text-align: center;
-	 letter-spacing:5px;
-	font-size: 1.5em;
- }
-article {
- 	margin: 1em;
- }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #ff2828;
+    color: #292f36;
 
- header,
- footer {
- 	display: flex;
- 	justify-content: center;
- 	align-items: center;
- 	flex-grow: 0;
- 	flex-shrink: 0;
-	text-transform: uppercase;
-	color: #fefefe;
-	background-color: rgb(210, 22, 59);
 }
-
- footer {
- padding:0.5em;
- }
-
- nav {
- flex-grow: 1;
- }
-
- .nav-list {margin: 0;padding: 0;list-style: none;display: flex;gap: 1em;}
- .nav-list li:nth-of-type(2) {margin-left: auto;}
- .nav-list li:nth-of-type(4) {margin-right: 1em;}
-
- a {color: #fefefe; text-decoration: none;} a:visited {color:#fefefe;} a:active {color: #fefefe; text-decoration: underline;} a:hover {color: #fefefe; cursor: pointer;    outline: 0;
-	; text-decoration: underline;
- }
-
- #emblem {
- height: 50px;
- padding: 0.5em;
- filter: invert(1);
+.header-banner {
+    background-color: #ff2828;
+    background-image: url('../imgs/1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
 }
-#home {
-	margin:auto;
-}
-  
-.search {
-	width: 100%;
-	position: relative;
-	display: flex;
-  }
-  
-  .searchTerm {
-	width: 100%;
-	border: 3px solid #cc0000;
-	border-right: none;
-	height: 40px;
-	border-radius: 5px 0 0 5px;
-	outline: none;
-	color: #9DBFAF;
-  }
-  
-  .searchTerm:focus{
-	color: #cc0000;
-  }
-  
-  .searchButton {
-	width: 80px;
-	height: 40px;
-	border: 1px solid #cc0000;
-	background: #cc0000;
-	text-align: center;
+.header-banner a {
 	color: #fff;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-	font-size: 20px;
+}
+#emblem {
+    background-color: rgba(120, 18, 18, 0.8);
+    color: #fff;
+    padding: 0 0.5em;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+    text-align: center;
+	display:flex;
+	flex-direction: row;
+    justify-content: center;
+	align-items: center;
+}
+
+#emblem h1{
+   margin-left:auto;
+}
+#emblem img {
+    padding-right:0.5em;
+    margin-bottom:0.2em;
+    height:50px;
+    margin-right: auto;
+    filter: invert(1);    
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+	color:#fefefe;
+    width: 100%;
+    height: 60px;
+    background: #ff2828;
+    /* position: fixed;
+    z-index: 10; */
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+/* demo content */
+
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+
+p img {
+    max-width: 100%;
+}
+.home {
+	padding:2em;
+    float: right;
+	margin: 2em auto;
+}
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 1rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+	.home {
+		margin: 0 auto;
+		float:left;
+	}
+}
+h3 {
+	font-weight: 200;
+}
+h4 {
+font-weight: 100;
+}
+.cards img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+.card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	/* padding: 1.4em; */
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox stuff */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+	flex: 0 1 calc(25% - 1em);
+}
+
+  .open-button {
+    background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  cursor: pointer;
+  color: #292f36;
+  font-family: helvetica;
+  line-height: 1.6;
+ font-size: 16px;
+  }
+  .open-button:hover {
+ text-decoration: underline;
+  }
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
   }
   
-  /*Resize the wrap to see the search bar change!*/
-  .wrap{
-	width: 80%;
-	margin:auto;
-    padding-bottom:1em;
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
   }
-
-  .container {
-	display: flex;
-	flex-direction: row;
-	flex-grow: 3;
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
   }
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 850px) {
-	.container {
-		display: flex;
-	flex-direction: column;
-	flex-grow: 2;
-	}
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
   }
-  .card {
-	width: 300px;
-	height: 400px;
-	background-color: #cc0000;
-	margin:2.5px;
-	border-radius: 5px 5px 5px 5px;
-padding:1em;
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: rgb(255, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
   }
-
-  .listing-container {
-	display: flex;
-	flex-direction: row;
-	flex-grow: 3;
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: rgb(255, 0, 0);
   }
-
-  .listing-card {
-	width: 900px;
-	height: 800px;
-	background-color: #cc0000;
-	margin:2.5px;
-	border-radius: 5px 5px 5px 5px;
-padding:1em;
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
   }

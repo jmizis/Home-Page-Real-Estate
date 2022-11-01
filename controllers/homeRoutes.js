@@ -5,7 +5,7 @@ const router = require('express').Router();
 router.get('/', (req, res, next) => {
   console.log('router working');
 
-  res.render('home', { layout: 'main' });
+  res.render('homepage', { layout: 'main' });
 });
 
 router.get('/login', (req, res, next) => {

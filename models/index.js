@@ -8,10 +8,5 @@ Listing.belongsTo(User)
 
 
 
-
-
-
-
-
 module.exports = {Listing,Login,User}
 

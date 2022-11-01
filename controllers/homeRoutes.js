@@ -2,11 +2,12 @@ const { application } = require('express');
 
 const router = require('express').Router();
 
-router.get('/homepage', (req, res, next) => {
+router.get('/homepage','/' (req, res, next) => {
   console.log('router working');
 
   res.render('homepage', { layout: 'main' });
 });
+
 
 router.get('/about', (req, res, next) => {
   console.log('router working');
@@ -31,6 +32,10 @@ router.get('/register', (req, res, next) => {
 
   res.render('register', { layout: 'main' });
 });
+router.get('/page', (req, res, next) => {
+  console.log('router working');
 
+  res.render('page', { layout: 'main' });
+});
 
 module.exports = router;

@@ -24,7 +24,10 @@ footer {
     left: 0;
     width: 100%; 
     background-color: #ff2828;
-    color: #292f36;
+    color: #fefefe;
+}
+footer a {
+    color: #fefefe;
 
 }
 .header-banner {
@@ -125,7 +128,33 @@ article {
 article p:first-of-type {
     margin-top: 0;
 }
+.listing-page {
+    margin-left:auto;
+    margin-right:auto;
+    padding:2.5em;
+}
 
+.gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
 p img {
     max-width: 100%;
 }
@@ -184,10 +213,6 @@ font-weight: 100;
 	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
 }
 
-.card-content {
-	/* padding: 1.4em; */
-}
-
 .card-content h2 {
 	margin-top: 0;
 	margin-bottom: .5em;
@@ -203,7 +228,8 @@ font-weight: 100;
 .cards {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content:center;
+   gap:1em;
 }
 
 .card {

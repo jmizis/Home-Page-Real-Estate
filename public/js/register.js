@@ -17,7 +17,7 @@ const registerFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/listing');
+      document.location.replace('/buyers');
     } else {
       alert(response.statusText);
     }

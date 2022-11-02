@@ -8,7 +8,6 @@ router.get('/homepage', (req, res, next) => {
   res.render('homepage', { layout: 'main' });
 });
 
-
 router.get('/about', (req, res, next) => {
   console.log('router working');
 

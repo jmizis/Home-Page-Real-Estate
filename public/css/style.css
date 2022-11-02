@@ -321,10 +321,6 @@ textarea{
     }
 }
 
-figcaption {
-   text-transform: lowercase;
-   font-size: small;
-}
 .global-container{
 	height:100%;
 	display: flex;
@@ -363,4 +359,5 @@ form{
 .btn-primary{
     margin:auto;
     color:black;
+
 }

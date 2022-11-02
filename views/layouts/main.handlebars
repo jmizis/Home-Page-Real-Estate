@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,40 +15,46 @@
     <div class="header-banner">
       <div id="emblem">
         <img src="./imgs/icons8-home-100.png" alt="home icon">
-				<a href="/homepage"><h1>HOME PAGE</h1></a>
+				<a href="/homepage">
+        <h1>HOME PAGE</h1>
+		</a>
       </div>
-    </div>
 
+    </div>
+    <div class="clear"></div>
     <nav>
-        <ul class="nav-list">
+        <div class="site-title">HOME PAGE</div>
+        <ul>
             <li><a href="/login">Login</a></li>
             <li><a href="/about">About</a></li>
-            <li><button type="button" class="btn" id="c-btn">Contact</button></li>
+            <li><button class="open-button" onclick="openForm()">Contact</button>
+            </li>
         <ul>
     </nav>
   </header>
+     
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Contact Form</h1>
 
- <div id="contact">
-  <form action="#">
-    <ul>
-      <h1>Contact</h1>
-      <li>
-        <input type="text" name="name" id="name" placeholder="&#xf2c0; Full name">
-        <input type="email" name="email" id="email" placeholder="&#xf003; Email">
-      </li>
-      <li>
-        <textarea name="message" id="message" placeholder="&#xf040; Your message"></textarea>
-      </li>
-      <li>
-        <input type="submit" value="Send message" class="btn" id="submit">
-      </li>
-    </ul>
-  </form>
-</div>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"> Message: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
 
-<main>
+
+	<main>
+
 {{{ body }}}
-</main>
+
+    </main>
 
 <footer>
   <small>
@@ -56,17 +63,15 @@
     License:&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
     <br>
+  
   </small>
 </footer>
 
 <!-- <script src="/js/carousel.js"></script> -->
 <script src="/js/logout.js"></script>
-<script src="/js/login.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script  src="/js/function.js"></script>
-<script  src="/js/carousel.js"></script>
-
+<script src="/js/script.js"></script>
 
 </body>
 
 </html>
+

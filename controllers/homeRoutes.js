@@ -2,7 +2,7 @@ const { application } = require('express');
 
 const router = require('express').Router();
 
-router.get('/homepage','/' (req, res, next) => {
+router.get('/homepage', (req, res, next) => {
   console.log('router working');
 
   res.render('homepage', { layout: 'main' });

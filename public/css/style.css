@@ -1,12 +1,13 @@
 *, *::after, *::before { box-sizing:border-box;}
 body { 
-    color: #292f36;
+    color: black;
+    background-color: #fefefe;
     font-family: helvetica;
     line-height: 1.6;
     margin:0px; 
     padding:0px; 
 }
-a {color: #292f36; text-decoration: none;} a:visited {color:#292f36;} a:active {color: #292f36; text-decoration: underline;} a:hover {color: #8f8f8f; cursor: pointer;    outline: 0;
+a {color: black; text-decoration: none;} a:visited {color:black;} a:active {color: black; text-decoration: underline;} a:hover {color: grey; cursor: pointer;    outline: 0;
 	; text-decoration: none;
  }
 
@@ -15,23 +16,20 @@ header {
     height: 360px;
     z-index: 10;
 }
+  
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    padding:1em;
+    align-items:center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%; 
-    background-color: #ff2828;
-    color: #fefefe;
 }
-footer a {
-    color: #fefefe;
 
-}
 .header-banner {
-    background-color: #ff2828;
+    background-color: #ff2200;
     background-image: url('../imgs/1.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -43,8 +41,7 @@ footer a {
 	color: #fff;
 }
 #emblem {
-    background-color: rgba(120, 18, 18, 0.8);
-    color: #fff;
+    background-color: rgba(255, 0, 0, 0.363);
     padding: 0 0.5em;
     position: absolute;
     top: 2rem; 
@@ -67,6 +64,12 @@ footer a {
     filter: invert(1);    
 }
 
+.nav-list {margin: 0;padding: 0;list-style: none;display: flex;gap: 1em;}
+.nav-list li:nth-of-type(1) {margin-left: auto;}
+.nav-list li:nth-of-type(3) {margin-right: 1em auto;}
+.nav-list li a {color:white;}
+.nav-list li a:hover {color:black;}
+
 .fixed-header {
     position: fixed;
     top: 0;
@@ -79,8 +82,6 @@ nav {
     width: 100%;
     height: 60px;
     background: #ff2828;
-    /* position: fixed;
-    z-index: 10; */
 }
 
 nav div {
@@ -109,6 +110,10 @@ nav ul li {
     margin-left: 10px;
 }
 nav ul li a {
+    text-decoration: none; 
+    color: #ffffff;
+}
+nav ul li a:hover {
     text-decoration: none; 
     color: #ffffff;
 }
@@ -236,70 +241,122 @@ font-weight: 100;
 	flex: 0 1 calc(25% - 1em);
 }
 
-  .open-button {
-    background: none!important;
-  border: none;
-  padding: 0!important;
-  /*optional*/
-  cursor: pointer;
-  color: #292f36;
-  font-family: helvetica;
-  line-height: 1.6;
- font-size: 16px;
-  }
-  .open-button:hover {
- text-decoration: underline;
-  }
-  /* The popup form - hidden by default */
-  .form-popup {
+#contact {
+    background: #fff;
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    margin: 3em ;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1)
+}
+.js #contact {
+    position: absolute;
+    top: 3em;
     display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
+    left:0; right:3em;
+}
+
+input {
+    border: 0;
+    margin: 1em 40px;
+    width: 300px;
     padding: 10px;
-    background-color: white;
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #04AA6D;
-    color: rgb(255, 0, 0);
-    padding: 16px 20px;
-    border: none;
+    border-bottom: 2px solid #ff0000;
+    background: none;
+    font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+    display: block;
+    color: #ff0000;
+}
+textarea{
+    border: 0;
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin-left: 40px;
+    background: none;
+    padding: 10px;
+    font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+    border-bottom: 2px solid #ff0000;
+    color: #ff0000;
+}
+#submit {
+  margin: 3em auto 4em;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+#submit:hover {
+    color: #fff;
+}
+.btn{
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
     cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: rgb(255, 0, 0);
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+    display: block;
+}
+ 
+.btn:hover{
+    color: rgb(0, 0, 0); border:
+   none;
+   border: 1px solid rgb(0, 0, 0);
+}
+ 
+.close {
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 3em;
+    color: #ee4444;
+}
+@media (max-width: 765px) {
+    textarea{
+        width: 250px;
+    }
+    input {
+        width: 250px;
+    }
+}
+
+
+.global-container{
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding:1em;
+}
+
+form{
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.btn{
+	font-size: 14px;
+	margin-top:20px;
+}
+
+.login-form{ 
+	width:330px;
+	margin:20px;
+}
+
+.sign-up{
+	text-align:center;
+	padding:20px 0 0;
+}
+
+.alert{
+	margin-bottom:-30px;
+	font-size: 13px;
+	margin-top:20px;
+}
+
+.btn-primary{
+    margin:auto;
+}

@@ -46,7 +46,7 @@ contactForm.init({
   speed: 200
 });
 })();
-=======
+ 
     $('html').addClass('js');
     
     var contactForm = {

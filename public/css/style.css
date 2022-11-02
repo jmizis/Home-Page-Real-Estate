@@ -127,7 +127,7 @@ nav ul li a:hover {
     max-width: 100%;
 }
 article {
-    float: left;
+    /* float: left; */
     width: 720px;
 }
 article p:first-of-type {
@@ -321,7 +321,10 @@ textarea{
     }
 }
 
-
+figcaption {
+   text-transform: lowercase;
+   font-size: small;
+}
 .global-container{
 	height:100%;
 	display: flex;
@@ -359,4 +362,5 @@ form{
 
 .btn-primary{
     margin:auto;
+    color:black;
 }

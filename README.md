@@ -2,7 +2,7 @@
 
 ## Description
 
-This project was a test of our coding skills, along with a test of our teamwork skills.  We were supposed to design an application and build an app using the MVC paradigm, creating our own server-side API, add user authentication, and connect to a database. We Chosse to create a real estate application where you can create a log in to be able to view our listings.
+This project was a test of our coding skills, along with a test of our teamwork skills.  We were supposed to design an application and build an app using the MVC paradigm, creating our own server-side API, add user authentication, and connect to a database. We chose to create a real estate application where you can create a log in to be able to view our listings.
 
 ## Challenges
 

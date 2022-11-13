@@ -4,11 +4,11 @@ const withAuth = require('../../utils/auth');
 
 //...code
 
-router.get('/listing', (req, res, next) => {
-    console.log('router working');
-  
-    res.render('listing', { layout: 'main' });
-  });
-  
+router.get('/listings', (req, res, next) => {
+  console.log('router working');
+
+  res.render('listings', { layout: 'main' });
+});
+
 // module.exports = router;
 module.exports = router;

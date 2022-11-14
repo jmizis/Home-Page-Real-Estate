@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/listing');
+      document.location.replace('/listings');
     } else {
       alert('Failed to log in');
     }

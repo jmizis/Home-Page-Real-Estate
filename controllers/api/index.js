@@ -9,7 +9,7 @@ router.use('/users/login', loginRoutes);
 // api/register
 router.use('/register', registerRoutes);
 //api/listing
-router.use('/listing', listingRoutes);
+router.use('/listings', listingRoutes);
 // api/users
 router.use('/users', userRoutes);
 

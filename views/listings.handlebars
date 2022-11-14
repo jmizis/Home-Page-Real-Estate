@@ -6,25 +6,22 @@
 	<link rel="shortcut icon" href="./assets/icons:fonts/favicon.ico" type="image/x-icon">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../public/css/style.css" type="text/css">
 	<title>roman's webpage</title>
 </head>
 
 <body>
-	<header>
+	<header id="listing-id">
 		<img id="emblem" src="./imgs/icons8-home-100.png" alt="home icon"></a>
-		<nav>
-			<ul class="nav-list">
-				<li><a href="index.html">Home Page</a></li>
-				<li><a href="about.html">About</a></li>|
-				<li><a href="listings.html">Buyers</a></li>|
-				<li><a href="signup.html">Login / Register</a></li>
-			</ul>
-		</nav>
 	</header>
 
 	<main class="home">
-		<h1>Listings Page</h1>
+		<h1 id="h1-listing-id">Listings Page</h1>
 
 		  <div class="jumbotron">
 			<div class="container">
@@ -330,17 +327,8 @@
 			</div>
 		  </div>
 	</main>
-	<footer>
-		<small>
-			Copyright:&nbsp;&nbsp;© 2022 Roman Sokol, John Mizis, Aaron King, Hector Perez
-			<br>
-			License:&nbsp;&nbsp;&nbsp;
-			<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
-			<br>
-			Social:&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/sokolroman">github</a>
-		</small>
-	</footer>
+	
+    <script src="/js/listing.js"></script>
 </body>
 
 </html>

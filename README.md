@@ -1,39 +1,26 @@
-# Project-2
+# Project 2: Real Estate Application
 
-## Description
+## Overview
 
-This project was a test of our coding skills, along with a test of our teamwork skills.  We were supposed to design an application and build an app using the MVC paradigm, creating our own server-side API, add user authentication, and connect to a database. We chose to create a real estate application where you can create a log in to be able to view our listings.
+This project involved the development of a real estate application using the MVC paradigm, including the creation of a server-side API, user authentication, and database integration. Teamwork and coding skills were tested throughout the project.
 
 ## Challenges
 
-Even thought our group believes that we created an application that meets high standards, that doesn't mean the we didn't have our fair share of challenges throughout the project. We had multiple challenges throughout the process. We each had our own resposibilities but when we were stuck on something we came together as a group to discuss the issues we had. Working together we were able to get throught the challenges and create our application.
+While the team was able to deliver a high-quality application, various challenges were encountered during the development process. These challenges were addressed through collaboration and teamwork, allowing the team to overcome any obstacles and successfully complete the project.
 
-### GitHub and Branches
+### GitHub and Branch Management
 
-Event though we had issues we did a excellent job on working with github and our branches. We always made sure we worked on our own branch to eliminate any merge conflicts but also made sure we double checked any pull request we did before approving them in to our main branch. 
+Effective use of GitHub and branching strategies was key to minimizing merge conflicts and ensuring smooth integration of code changes. Careful review of pull requests was also undertaken to ensure that only high-quality code was merged into the main branch.
 
+### Deployment to Heroku
 
-
-
-
-
-
-
-### Heroku
-For this project we had to deploy our application to heroku. 
-URL:
-
-
-
-
+The application was successfully deployed to Heroku, with the URL provided below.
 
 ## Conclusion
 
-This project was a great way for us to show off our newly learned skills, along with also allowed us to work as a whole group to complete a task. There were a lot to do in a sort period of time but we each took our own task and completed it step by step. At times we were stuck or had issues but we overcame that as a group to complete the best application. 
+This project provided an opportunity to apply and showcase newly acquired skills, while also promoting teamwork and problem-solving. Despite the challenges encountered, the team was able to deliver a functional and reliable real estate application.
 
+## Links
 
-
-### Links
-repo: https://github.com/jmizis/Project-2
-
-Heroku URL: 
+- Repository: https://github.com/jmizis/Project-2
+- Heroku URL: 
